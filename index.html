@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicación</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temaapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="false" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Volcanes</h1>
+  </div> 
+<div data-role="main" class="ui-content"> 
+  <div data-role="collapsible" data-content-theme="false" align="center">
+    <h1>Popocatépelt</h1>
+    <div>
+      <p><strong>Tamaño:</strong> El Popocatépetl es un volcán con una altitud máxima de 5500 metros sobre el nivel del mar, tiene un diámetro de 25 km en su base, La distancia entre las paredes de su cráter varía entre los 660 y los 840 m. 
+      <p><strong>Antigüedad:</strong> Tiene una edad aproximada de 730 000 años.</p>
+      <p><strong>Localización:</strong> Se localiza en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.</p>
+      <br>
+    </div>
+    <div>
+      <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('v16','','imagenes/volcan16.jpg',1)"><img src="imagenes/volcan1.jpg" width="50%" id="v16" /></a></p>
+    </div>
+  
+    <div>
+      <p><strong>Actividad:</strong> El Popocatépetl ha estado desde siempre en actividad, pero en 1991 se inició un incremento en su actividad y a partir de 1993 las fumarolas eran ya claramente visibles desde distancias de alrededor de 50 kilómetros. La última erupción violenta del volcán se registró del 18 al 19 diciembre de 2000.
+      </p>
+      <br>
+    </div>
+    <div>
+      <img src="imagenes/volcan2.jpg" width="50%">
+    </div>
+    
+    <div>
+      <p><strong>Monitoreo:</strong> Actualmente el volcán se encuentra en un estado de alerta amarillo fase dos, la única manera de percibir y evaluar el estado de actividad y riesgo asociado de un volcán, es a través de la observación y vigilancia sistemática mediante diversos métodos visuales e instrumentales. Si estos se aplican en forma anticipada es posible, en la mayoría de los casos, actividad eruptiva inminente y poner en marcha, de parte de las autoridades de Protección Civil el plan de emergencia previamente establecido
+      </p>
+      <p>La información de esta sección es el resultado del monitoreo del volcán Popocatépetl que se realiza conjuntamente con la Universidad Nacional Autónoma de México. El reporte se publica diariamente a las 11 de la mañana; en éste se resume la actividad registrada durante las últimas 24 horas, esto es, de 10 de la mañana del día anterior a 10 de la mañana del día en curso. En caso de que ocurra un evento extraordinario se reportará de forma inmediata.
+      </p>
+      <br>
+    </div>
+    <div>
+      <img src="imagenes/volcan3.png" width="50%">
+    </div>
+  </div>
+   
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Medidas de prevención</h1>
+    <div>
+      <p><strong>Caída de ceniza</strong></p>
+      <ul>
+        <li>No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado.</li>
+        <li>No realices actividades al aire libre y si es posible no salgas.</li>
+        <li>Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.</li>
+        <li>Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.</li>
+        <li>Ten a la mano una linterna y pilas.</li>
+        <li>Cubre tinacos, cisternas y depósitos de agua.</li>
+        <li>Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.</li>
+        <li>Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al ingresar a tu casa se recomienda cambiar de ropa.</li>
+        <li>Mantén a tus mascotas en un lugar techado al igual que sus alimentos. Si tus mascotas salen, cepíllalos antes de permitirles la entrada nuevamente.</li>
+        <li>Usa las vías de comunicación solo en caso de ser necesario.</li>
+      </ul>
+      <br>
+    </div>
+    <div>
+      <img src="imagenes/volcan4.jpeg" width="50%"> 
+    </div>
+    <br>
+    <div>
+      <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('v19','','imagenes/volcan19.jpg',1)"><img src="imagenes/volcan5.jpg" width="50%" id="v19" /></a></p> 
+    </div>
+          
+    <div>
+      <p><strong>Erupción volcanica</strong></p>
+      <p>Antes que nada, si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+      </p>
+      <ul>
+      <li>Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno, ademas de tener el kit de emergencia a la mano</li>
+      <li>Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán</li>
+      <li>Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.</li>
+      <li>Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.</li>
+      <li>La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetros por hora.</li>
+      <li>Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección.</li>
+      </ul>
+      <p><strong>Estados que afectaría:</strong> Al evacuar, ten en cuenta que el espacio territorial en el que puede afectar la erupción es de aproximadamente 15,708 km² y abarca el Distrito Federal, Tlaxcala, Morelos y parcialmente los estados de Hidalgo, México y Puebla.</p>
+      <br>
+    </div>
+    <div>
+      <img src="imagenes/volcan6.jpg" width="50%"> 
+    </div>
+    <br>
+    <div>
+      <img src="imagenes/volcan7.jpg" width="50%"> 
+    </div>
+  </div>
+  <br>
+  <!-- Start WOWSlider.com -->
+  <iframe src="visor/indexwow.html" style="width:1000px;height:440.5px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+  <!-- End WOWSlider.com -->
+  <br>
+  <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Volcan Xinantécatl (Nevado de Toluca)</h2>
+        <p>Muestra información sobre el Volcan Xinantécatl</p>
+        </a>
+      </li>
+      <br>
+        <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Monte Fuji</h2>
+        <p>Muestra información sobre el Monte Fuji</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <br>  
+  </div>
+  <div data-role="footer" align="center" data-theme="a">
+        <div>
+          <img src="imagenes/volcan.png" width="46" height="46">
+        </div>
+        <div>
+          <h4>Aplicacion Tres</h4>
+          <h4>Luis Mario García Rendón</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Volcan Xinantécatl</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2>Xinantécatl (Nevado de Toluca)</h2>
+        <p><strong>Localización:</strong> Se encuentra en el Estado de México, entre los valles de Toluca y Tenango (Valle del Matlatzinco), se localiza aproximademente a 22 km al suroeste de Toluca</p>
+        <img src="imagenes/volcan8.jpg" width="30%" height="30%">
+        
+        <p><strong>Tamaño:</strong> Alcanza una elevación de 4680m sobre el nivel del mar. Tiene un cráter de la cumbre 1.5 km. Su superficie abarca 46784 hectáreas.</p>
+        <p><strong>Actividad:</strong> El volcán no ha tenido actividad desde el año 1350 en el que fue su ultima erupción.</p>
+        <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('v17','','imagenes/volcan17.jpg',1)"><img src="imagenes/volcan9.jpg" width="30%" id="v17" /></a></p>
+        
+        <p><strong>Monitoreo:</strong> La Secretaría de Salud estatal mantiene un intenso monitoreo en las zonas más altas del territorio, donde se estima que unas 20 mil personas están expuestas a sufrir los embates del invierno. El director general de Protección Civil estatal, destacó que debido a que en esta ocasión solo se presentó nieve en la cúspide se determinó mantener una vigilancia estrecha y cerrar el camino que sube hasta el cráter del Nevado de Toluca
+        <img src="imagenes/volcan10.jpg" width="30%" height="30%">
+        
+        <p><strong>Rango de afectación:</strong> No afectaría de manera directa otros estados pero si seria varias regiones del estado de mexico, como se muestra en el mapa.
+        <div>
+        <img src="imagenes/volcan11.jpg" width="50%" height="50%">
+        </div>
+      </div>
+      </div>
+      <div data-role="footer" data-theme="a">
+        <h4>Luis Mario García Rendón</h4>
+      </div>
+    </div>
+  </div>  
+  
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Monte Fuji</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2>Monte Fuji</h2>
+        <p><strong>Localización:</strong> Se encuentra en Japón, entre las prefecturas de Shizuoka y Yamanashi; en el Japón central y justo al oeste de Tokio.</p>
+        <p><strong>Antigüedad:</strong> La antigüedad del Monte Fuji se remonta a la era Yayoi (300-250 a.C.).</p>
+        <img src="imagenes/volcan12.jpg" width="30%" height="30%">
+        <p><strong>Tamaño:</strong> Tiene una medida 30 kilómetros a su base, 3.776 metros de altitud, dando un volumen de 870 km3 de este estratovolcán. Está coronado por un cráter de 500 a 700 metros de diámetro y una profundidad de entre 100 y 250 metros. </p>
+        <p><strong>Actividad:</strong> Su última erupción data de 1707, por lo que es considerado poco peligroso.
+        <div>
+        <p><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('v18','','imagenes/volcan18.jpg',1)"><img src="imagenes/volcan13.jpg" width="50%" id="v18" /></a></p>
+        </div>
+        <p><strong>Rango de afectación:</strong> Aproximadamente unos 100 kilómetros al suroeste de Tokio.</p>
+        <img src="imagenes/volcan14.jpg" width="30%" height="30%">
+        <p><strong>Medidas de prevención:</strong></p> En caso de que el volcán entre en erupción se aprobó un plan para esta situación:
+        <p>El plan llama a los residentes a seguir para refugios en edificios resistentes se más de 30 centímetros de cenizas se acumulan en el suelo.
+Se calculó el número de personas que tienen que evacuar debido a cenizas de una posible erupción.
+Se predijo que hasta 406 mil personas tendrían que evacuar en Kanagawa, 62 mil en Shizuoka y mil en Yamanashi. Eso se basa en los datos estimados de la última erupción del volcán que ocurrió hace más de 300 años.
+El panel predice que hasta 131 mil personas tendrían que evacuar si la lava fluye principalmente hacia la ciudad de Fuji, Shizuoka.</p>
+      <img src="imagenes/volcan15.JPG" width="30%" height="30%">
+      </div>
+      </div>
+      <div data-role="footer" data-theme="a">
+        <h4>Luis Mario García Rendón</h4>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
